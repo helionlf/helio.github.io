@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" 
+        integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" 
+        crossorigin="anonymous">
+    </script>
+
+    <script src="script.js"></script>
+
+    <title>portifólio</title>
+</head>
+<body>
+    <section>
+        <div class="top">
+            <div class="profile">
+                <img class="my-icon" src="image/my_icon.jpg" alt="icon" title="Hélio Nogueira">
+            </div>
+            <div class="about">
+
+                <h1>
+                    About me
+                </h1>
+
+                <p>
+                    Minha paixão pela tecnologia é evidente, e estou sempre em busca de inovação e de formas
+                    criativas de solucionar problemas. Estou em constante aprendizado e à procura de uma oportunidade
+                    para crescer como desenvolvedor. Acredito que minha combinação de formação acadêmica, experiência
+                    prática e entusiasmo pela área da tecnologia me torna um candidato ideal para esta vaga.
+                </p>
+            </div>
+        </div>
+
+        <div class="mid">
+            <div class="container">
+                <div class="card">
+                    <iframe src="https://github.com/helionlf/Grafos.git"></iframe>
+                </div>
+
+                <div class="card">
+                    <iframe src="https://www.instagram.com/praiadeiracemaoficial/embed"></iframe>
+                </div>
+
+                <div class="card">
+                    <iframe src="https://github.com/helionlf/Algoritmos.git"></iframe>
+                </div>
+            </div>
+
+            <!-- <h2>Soft Skills</h2> -->
+
+            <div class="skill-container">
+                <div class="carousel">
+                    <img src="image/html-icon.png" alt="html-icon" title="HTML">
+                    <img src="image/css-icon.png" alt="css-icon" title="CSS">
+                    <img src="image/js-icon.png" alt="js-icon" title="JavaScript">
+                    <img src="image/node-icom.png" alt="node-icom" title="Node.js">
+                    <img src="image/java-icon.png" alt="java-icon" title="Java">
+                    <img src="image/clojure-icon.png" alt="clojure-icon" title="Clojure">
+                    <img src="image/mysql-icon.png" alt="mysql-icon" title="MySQL">
+                    <img src="image/arduino-icon.png" alt="arduino-icon" title="Arduino">
+                    <img src="image/wordpress-icon.png" alt="wordpress-icon" title="Wordpress">
+                    <img src="image/xampp-icon.png" alt="xampp-icon" title="Xampp">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="down">
+            <div class="redes">
+                <img src="image/instagram-icon.png" alt="">
+                <img src="image/Whatsapp-icon.png" alt="">
+                <img id="git" src="image/github-icon.png" alt="">
+                <img src="image/linkedin-icon.png" alt="">
+                <img src="image/YouTube-icon.png" alt="">
+            </div>
+
+            <div class="download">
+                <img class="curriculo" src="image/pdf-icon.png" alt="pdf-icom" title="Currículo">
+                <button onclick="baixar()" type="submit">Baixar currículo</button>
+            </div>         
+        </div>
+    </section>
+</body>
+</html>

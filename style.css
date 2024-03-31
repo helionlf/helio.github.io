@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #000000;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+    border: solid 2px #ffffff;
+    /* border-top: solid 2px #dc5b51;
+    border-right: solid 2px #ffffff;
+    border-bottom: solid 2px #dc5b51;
+    border-left: solid 2px #ffffff; */
+    border-radius: 50%;
+    background-color: #121212;
+}
+
+.my-icon {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    height: 200px;
+    margin: 20px;
+    /* border: solid 1px #ffffff34; */
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dc5b51;
+}
+
+p {
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #0e0e0e;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 5%;
+    gap: 50px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 280px;
+    height: 280px;
+    background-color: #2e2929;
+    border-radius: 25px;
+    /* border: solid 1px #494242; */
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+iframe {
+    width: 90%; 
+    height: 90%;
+    border-radius: 25px;
+    border: 1px #ffffff;
+}
+
+.container:hover .card {
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;  
+}
+
+.container:hover .card:hover {
+    transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    box-shadow: 0px 4px 4px #dc5b51;
+    border: none;
+}
+
+.skill-container {
+    width: 80%;
+    margin-bottom: 8%;
+    overflow: hidden;
+  }
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px
+}
+
+.carousel {
+    display: flex;
+    /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; 
+}
+  
+.carousel img {
+    border-radius: 25px;
+    margin: 50px;
+    /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6); */
+    width: 90%;
+    height: 150px;
+}
+
+.carousel img:hover {
+    transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #000000;
+}
+
+.download {
+    margin: 3% 3% 2% 3%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.curriculo {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    background-color: #dc5b51;
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #e8756d;
+}
+
+.redes {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes img {
+    width: 40px;
+    height: 40px;
+    margin: 15px 15px 15px 15px;
+}
+
+#git {
+    background-color: white;
+    border-radius: 59%;
+    padding: 0.5%;
+}
+
+.redes img:hover {
+    transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    
+}
