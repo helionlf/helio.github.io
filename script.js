@@ -17,7 +17,7 @@ function baixar() {
             link.href = urlBlob;
 
             // Defina o nome do arquivo para o download
-            link.download = "meu-curriculo.pdf";
+            link.download = "currículo_helio_nogueira.pdf";
 
             // Adicione o link ao documento e clique nele para iniciar o download
             document.body.appendChild(link);
