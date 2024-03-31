@@ -1,5 +1,5 @@
 function baixar() {
-    var urlCurriculo = "currículo.pdf";
+    var urlCurriculo = "Currículo.pdf";
 
     var xhr = new XMLHttpRequest();
     xhr.open('GET', urlCurriculo, true);
