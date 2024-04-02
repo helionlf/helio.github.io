@@ -80,12 +80,13 @@ p {
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 5%;
+    margin: 5% 5% 1.8% 5%;
     gap: 50px;
 }
 
 .card {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -98,11 +99,65 @@ p {
     transition: all 0.4s;
 }
 
-iframe {
-    width: 90%; 
-    height: 90%;
+.title-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-card h3 {
+    text-decoration: none;
+    color: #dc5b51;
+    font-size: x-large;
+}
+
+.title-card h3:hover {
+    transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.card a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 25px;
-    border: 1px #ffffff;
+    box-shadow: 0px 4px 4px #0e0e0e;
+    display: flex;
+    width: 90%;
+    height: 50%;
+
+}
+
+#login-icon {
+    width: 55%;
+    height: 90%;
+}
+
+#mario-icon {
+    width: 70%;
+    height: 90%;
+}
+
+#invaders-icon {
+    width: 70%;
+    height: 90%;
+}
+
+.p-card {
+    display: flex;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5%;
+}
+
+.p-card p {
+    color: #616060b7;
+    width: 100%;
+    margin: 0 5% 0 0;
 }
 
 .container:hover .card {
@@ -115,6 +170,17 @@ iframe {
     transform-style: preserve-3d;
     box-shadow: 0px 4px 4px #dc5b51;
     border: none;
+}
+
+.show-more {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.show-more:hover {
+    color: #dc5b51;
+    transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
 }
 
 .skill-container {
