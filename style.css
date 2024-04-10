@@ -1,12 +1,22 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     background-color: hsl(0, 0%, 0%);
     color: white;
     width: 100%;
+}
+
+header {
+    display: flex;
+}
+
+header h3 {
+    margin: 15px;
+    color: #dc5b51;
 }
 
 section {
@@ -29,12 +39,8 @@ section {
     align-items: center;
     width: 200px;
     height: 200px;
-    margin: 25px;
+    margin: 50px;
     border: solid 2px #ffffff;
-    /* border-top: solid 2px #dc5b51;
-    border-right: solid 2px #ffffff;
-    border-bottom: solid 2px #dc5b51;
-    border-left: solid 2px #ffffff; */
     border-radius: 50%;
     background-color: #121212;
 }
@@ -45,6 +51,12 @@ section {
     border-radius: 50%;
 }
 
+.profile:hover .my-icon:hover {
+    transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    border: none;
+}
+
 .about {
     display: flex;
     flex-direction: column;
@@ -52,18 +64,22 @@ section {
     width: 600px;
     height: 200px;
     margin: 20px;
-    /* border: solid 1px #ffffff34; */
     border-radius: 10px;
 }
 
 h1 {
+    margin: 5px 5px 5px 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+#sobrenome {
     color: #dc5b51;
 }
 
 p {
-    margin: 5px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
 }
 
 .mid {
@@ -72,7 +88,7 @@ p {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #0e0e0e;
+    background-color: #181818;
 }
 
 .container {
@@ -103,7 +119,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin: 10px 0;
     width: 90%;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -119,45 +135,63 @@ p {
     transform-style: preserve-3d;
 }
 
-.card a {
+.card-icon {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
-    box-shadow: 0px 4px 4px #0e0e0e;
-    display: flex;
     width: 90%;
     height: 50%;
 
 }
 
 #login-icon {
-    width: 55%;
-    height: 90%;
+    width: 30%;
+    height: 65%;
+    animation: icons-move 2s infinite;
 }
 
 #mario-icon {
-    width: 70%;
-    height: 90%;
+    width: 30%;
+    height: 60%;
+    animation: icons-move 2s infinite;
+    animation-delay: 0.3s;
 }
 
 #invaders-icon {
-    width: 70%;
-    height: 90%;
+    width: 30%;
+    height: 60%;
+    animation: icons-move 2s infinite;
+    animation-delay: 0.5s;
 }
 
 .p-card {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #181818;
+    display: flex;
     width: 90%;
+    height: 50%;
     font-family: Arial, Helvetica, sans-serif;
     margin: 5%;
+    text-decoration: none;
+}
+
+@keyframes icons-move {
+    0% {
+        margin-bottom: 15px;
+    }
+        
+    100% {
+        margin-bottom: 0;
+    }
 }
 
 .p-card p {
     color: #616060b7;
     width: 100%;
-    margin: 0 5% 0 0;
+    margin: 0 5px;
 }
 
 .container:hover .card {
@@ -276,5 +310,4 @@ button:hover {
 .redes img:hover {
     transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
-    
 }
